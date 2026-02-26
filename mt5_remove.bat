@@ -22,6 +22,7 @@ if "%OS_ARCH%"=="x64" (
 
 if exist "%NSSM%" (
     echo Running: %NSSM%
+    "%NSSM%" stop MT5Service
     "%NSSM%" remove MT5Service confirm
 
 ) else (
