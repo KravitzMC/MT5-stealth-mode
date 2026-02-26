@@ -32,9 +32,10 @@ for another command if you want:
 * <b>Stop Service :</b>  ``` mt5_stop.bat ```
 * <b>Uninstall Service :</b>  ``` mt5_remove.bat ```
 
-### 3. Test Python script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
 
-Before run the script, please close all MT5 process instances.
+### 3. Test running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
+
+Before running the script, please make sure to close all MT5 process instances.
 
 ```python
 import MetaTrader5 as mt5
