@@ -23,7 +23,7 @@ mt5_install.bat
 on ``` services.msc ```  When you check services list you will see MT5Service (running) that install successfully.
 
 <div align="center">
-   <img style="margin: 0 auto; padding-bottom: 15px; padding-top: 30px" width=70%" src="https://github.com/KravitzMC/github-auto-block-account/blob/main/serv_screen.png">
+   <img style="margin: 0 auto; padding-bottom: 15px; padding-top: 30px" width=70%" src="https://github.com/KravitzMC/MT5-stealth-mode/blob/main/serv_screen.png">
 </div>
 
 for another command if you want:
@@ -35,7 +35,15 @@ for another command if you want:
 
 Before running the script, please close all MT5 process instances.
 
-```bash
-mt5_start.bat
+```python
+import MetaTrader5 as mt5
+
+if not mt5.initialize():
+    print("initialize() failed")
+    mt5.shutdown()
+
+print("Connected to MT5")
+account_info = mt5.account_info()
+print("Account:", account_info.login)
 ```
 
