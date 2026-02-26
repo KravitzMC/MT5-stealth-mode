@@ -12,9 +12,10 @@ git clone https://github.com/KravitzMC/MT5-stealth-mode.git
 cd MT5-stealth-mode
 ```
 
-### 2. Open Command Prompt (Run Admin):
 
-### 3. Install MT5-Stealth Service:
+### 2. Install MT5-Stealth Service:
+
+🖥️  Open Command Prompt (Run as Administator) 
 
 ```bash
 mt5_install.bat
@@ -31,9 +32,9 @@ for another command if you want:
 * <b>Stop Service :</b>  ``` mt5_stop.bat ```
 * <b>Uninstall Service :</b>  ``` mt5_remove.bat ```
 
-### 4. Test running script 
+### 3. Test Python script (MetaTrader5-package)[https://pypi.org/project/metatrader5/] :
 
-Before running the script, please close all MT5 process instances.
+Before run the script, please close all MT5 process instances.
 
 ```python
 import MetaTrader5 as mt5
@@ -41,9 +42,12 @@ import MetaTrader5 as mt5
 if not mt5.initialize():
     print("initialize() failed")
     mt5.shutdown()
+    quit()
 
 print("Connected to MT5")
 account_info = mt5.account_info()
 print("Account:", account_info.login)
 ```
+
+if output is : Connected to MT5 Account: 123456789 means it's working.
 
