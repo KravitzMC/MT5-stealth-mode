@@ -35,8 +35,7 @@ Password=your_password
 Server=your_broker_server
 
 [StartUp]
-;--- please set Symbol chart only from your borker.
-Symbol=XAUUSD.p           
+Symbol=XAUUSD.p
 
 [Experts]
 AllowDllImport=1
