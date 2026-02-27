@@ -20,59 +20,11 @@ if "%OS_ARCH%"=="x64" (
     set "NSSM=%BASE_DIR%\bin\x86\nssm.exe"
 )
 
-if "%OS_ARCH%"=="x64" (
-    set "TARGET_EXE=terminal64.exe"
-) else (
-    set "TARGET_EXE=terminal.exe"
-)
+for /f "delims=" %%i in ('powershell -ExecutionPolicy Bypass -File "selectfile.ps1"') do set selectedFile=%%i
 
-for %%D in (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z) do (
-    if not defined FOUND_EXE (
-        if exist "%%D:\" (
-            
-            if exist "%%D:\Program Files" (
-                for /f "delims=" %%A in ('
-                    where /r "%%D:\Program Files" terminal*.exe 2^>nul
-                ') do (
-                    set "FOUND_EXE=%%A"
-                    for %%I in ("%%A") do set "FOUND_DIR=%%~dpI"
-                    goto :FOUND
-                )
-            )
-            
-            if exist "%%D:\Program Files (x86)" (
-                for /f "delims=" %%A in ('
-                    where /r "%%D:\Program Files (x86)" terminal*.exe 2^>nul
-                ') do (
-                    set "FOUND_EXE=%%A"
-                    for %%I in ("%%A") do set "FOUND_DIR=%%~dpI"
-                    goto :FOUND
-                )
-            )
+echo You selected: %selectedFile%
 
-        )
-    )
-)
-
-:FOUND
-
-if defined FOUND_EXE (   
-    echo Found:
-    echo %FOUND_EXE%
-) else (
-    echo No terminal*.exe found in drives A-Z.
-)
-
-for /f "usebackq delims=" %%A in (`powershell -command "(Get-Item '%FOUND_EXE%').VersionInfo.FileDescription"`) do (   
-    set "EXE_DESC=%%A"
-
-    if /i "%%A"=="MetaTrader 5 Client Terminal" (
-        echo Running: %NSSM%
-        goto :MATCH_FOUND
-    )
-)
-
-:MATCH_FOUND
+set "FOUND_EXE=%selectedFile%"
 
 set "INI=%~dp0common.ini"
 
