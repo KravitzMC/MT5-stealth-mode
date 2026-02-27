@@ -49,7 +49,7 @@ WebRequest=0
 WebRequestUrl=
 ```
 
-<b> Whould you like more option plese go to : [Metatrader5 Official](https://www.metatrader5.com/en/terminal/help/start_advanced/start) </b>
+<b> Whould you like more option please go to : [Metatrader5 Official](https://www.metatrader5.com/en/terminal/help/start_advanced/start) </b>
 
 ### 3. Install MT5-Stealth Service:
 
