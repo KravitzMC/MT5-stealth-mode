@@ -22,9 +22,11 @@ if "%OS_ARCH%"=="x64" (
 
 for /f "delims=" %%i in ('powershell -ExecutionPolicy Bypass -File "selectfile.ps1"') do set selectedFile=%%i
 
-echo You selected: %selectedFile%
-
 set "FOUND_EXE=%selectedFile%"
+
+if not defined FOUND_EXE (
+    exit /b
+)
 
 set "INI=%~dp0common.ini"
 

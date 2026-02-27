@@ -1,8 +1,7 @@
 Add-Type -AssemblyName System.Windows.Forms
 
-
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Configure Metatrader 5"
+$form.Text = "Metatrader 5 Configure"
 $form.Size = New-Object System.Drawing.Size(400, 150)
 $form.StartPosition = "CenterScreen"
 
