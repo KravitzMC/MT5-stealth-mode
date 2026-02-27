@@ -51,14 +51,18 @@ Before running the script, please make sure to close all MT5 process instances.
 import MetaTrader5 as mt5
 
 if not mt5.initialize():
-    print("initialize() failed")
-    mt5.shutdown()
-    quit()
+   raise Exception("MT5 initialize failed")      
 
-print("Connected to MT5")
+if not mt5.login(
+            login=12345678,
+            password=123456,
+            server=your_broker_server)
+      ):
+      raise Exception("MT5 login failed")   
+
+print("MT5 connected")
 account_info = mt5.account_info()
 print("Account:", account_info.login)
 ```
 
-if output is : Connected to MT5 Account: 123456789 means it's working.
-
+if output is : Connected to MT5 Account: 123456789 mean is service background process still working.
