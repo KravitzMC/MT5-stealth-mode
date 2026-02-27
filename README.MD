@@ -26,7 +26,7 @@ cd MT5-stealth-mode
 
 ### 2. Basic Configuration:
 
-Open the common.ini file, and set the Login, Password, Server values in Common section and set Symbol in StartUp section.
+Open the ``` common.ini ``` file, and set the Login, Password, Server values in Common section and set Symbol in StartUp section.
 
 ```bash
 [Common]
