@@ -55,14 +55,15 @@ if not mt5.initialize():
 
 if not mt5.login(
             login=12345678,
-            password=123456,
-            server=your_broker_server)
-      ):
-      raise Exception("MT5 login failed")   
+            password="123400000",
+            server="your_broker_server"):
+            
+    raise Exception("MT5 login failed")
 
 print("MT5 connected")
 account_info = mt5.account_info()
 print("Account:", account_info.login)
+print("Balance:", account_info.balance)
 ```
 
 if output is : Connected to MT5 Account: 123456789 mean is service background process still working.
