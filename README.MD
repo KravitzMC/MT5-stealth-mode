@@ -26,13 +26,17 @@ cd MT5-stealth-mode
 
 ### 2. Basic Configuration:
 
-Open the common.ini file, and set the Login, Password, and Server values in the Common section.
+Open the common.ini file, and set the Login, Password, Server values in Common section and set Symbol in StartUp section.
 
 ```bash
 [Common]
 Login=your_login_id
 Password=your_password
 Server=your_broker_server
+
+[StartUp]
+;--- please set Symbol chart only from your borker.
+Symbol=XAUUSD.p           
 
 [Experts]
 AllowDllImport=1
@@ -44,9 +48,6 @@ Api=0
 DisableOpenCL=
 WebRequest=0
 WebRequestUrl=
-
-[StartUp]
-Symbol=XAUUSD.p
 ```
 
 <b> Whould you like more option plese go to : [Metatrader5 Official](https://www.metatrader5.com/en/terminal/help/start_advanced/start) </b>
