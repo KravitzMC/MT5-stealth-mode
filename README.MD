@@ -8,8 +8,8 @@ The Windows batch scripts convert MetaTrader 5 into background Windows Services.
 
 ## Feature
 
-✅ Auto allow algorithmic trading. </br>
-✅ Auto allow DLL import. </br>
+✅ Auto enabled allow algorithmic trading. </br>
+✅ Auto enabled allow DLL import. </br>
 
 
 ## 👇 Quickstart
