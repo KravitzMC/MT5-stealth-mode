@@ -1,6 +1,16 @@
+<div align="center">
+   <img style="margin: 0 auto; padding-bottom: 15px; padding-top: 30px" width=70%" src="https://github.com/KravitzMC/MT5-stealth-mode/blob/main/banneer.png">
+</div>
+
 # MT5-Stealth Mode
 
-The Windows batch scripts convert MetaTrader 4 or 5 into background Windows Services. that best work only on EA, Python-MetaTrader etc. but dont't show anything while running script, it will hide all window of MT5. 
+The Windows batch scripts convert MetaTrader 5 into background Windows Services. that best work only on EA, Python-MetaTrader etc. but dont't show anything UI process while running script.
+
+### Feature
+
+✅ Auto allow algorithmic trading.
+✅ Auto allow DLL import.
+❌ Auto Login .. (make sure before install service you must set login to your account by manually on MetaTrader 5) 
 
 ## 👇 Quickstart
 
