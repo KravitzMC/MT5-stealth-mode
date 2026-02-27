@@ -67,6 +67,6 @@ print("Account:", account_info.login)
 
 if output is : Connected to MT5 Account: 123456789 mean is service background process still working.
 
-### Note : 
+### 🔴 Note : 
 
 Please test with your Demo account before trade with Live account.  and if you want to remove order position you can remove by manually at Metatrader 5 or by Python code.
