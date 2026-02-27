@@ -24,9 +24,9 @@ git clone https://github.com/KravitzMC/MT5-stealth-mode.git
 cd MT5-stealth-mode
 ```
 
-### 2. Basic Configuration file:
+### 2. Basic Configuration:
 
-in "MT5-stealth-mode" folder look common.ini and edit value by set Login, Password, Server in Common section.
+Open the common.ini file, and set the Login, Password, and Server values in the Common section.
 
 ```bash
 [Common]
@@ -49,7 +49,7 @@ WebRequestUrl=
 Symbol=XAUUSD.p
 ```
 
-For more information config: [Reference](https://www.metatrader5.com/en/terminal/help/start_advanced/start)
+For more information : [Reference](https://www.metatrader5.com/en/terminal/help/start_advanced/start)
 
 ### 3. Install MT5-Stealth Service:
 
