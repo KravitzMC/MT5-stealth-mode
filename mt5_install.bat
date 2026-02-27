@@ -34,7 +34,7 @@ if exist "%NSSM%" (
     echo Running: %NSSM%
     "%NSSM%" install MT5Service  "%FOUND_EXE%"
     "%NSSM%" set MT5Service AppDirectory  "%FOUND_DIR%
-    "%NSSM%" set MT5Service AppParameters /config:"%INI%"
+    "%NSSM%" set MT5Service AppParameters /config:"%INI%" /portable
     "%NSSM%" set MT5Service AppExit Default Restart
     "%NSSM%" set MT5Service DisplayName MT5Service
     "%NSSM%" set MT5Service ObjectName LocalSystem

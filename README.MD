@@ -24,8 +24,34 @@ git clone https://github.com/KravitzMC/MT5-stealth-mode.git
 cd MT5-stealth-mode
 ```
 
+### 2. Basic Configuration file:
 
-### 2. Install MT5-Stealth Service:
+in "MT5-stealth-mode" folder look common.ini and edit value by set Login, Password, Server in Common section.
+
+```bash
+[Common]
+Login=your_login_id
+Password=your_password
+Server=your_broker_server
+
+[Experts]
+AllowDllImport=1
+Enabled=1
+Account=0
+Profile=0
+Chart=0
+Api=0
+DisableOpenCL=
+WebRequest=0
+WebRequestUrl=
+
+[StartUp]
+Symbol=XAUUSD.p
+```
+
+For more information config: [Reference](https://www.metatrader5.com/en/terminal/help/start_advanced/start)
+
+### 3. Install MT5-Stealth Service:
 
 ```bash
 mt5_install.bat
@@ -43,7 +69,7 @@ for another command if you want:
 * <b>Uninstall Service :</b>  ``` mt5_remove.bat ```
 
 
-### 3. Try running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
+### 4. Try running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
 
 Before running the script, please make sure to close all MT5 process instances.
 
