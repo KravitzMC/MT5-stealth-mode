@@ -16,6 +16,8 @@ The Windows batch scripts convert MetaTrader 5 into background Windows Services.
 
 ### 1. First clone repository:
 
+🖥️  Open Command Prompt (Run as Administator) 
+
 ```bash
 git clone https://github.com/KravitzMC/MT5-stealth-mode.git
 
@@ -24,8 +26,6 @@ cd MT5-stealth-mode
 
 
 ### 2. Install MT5-Stealth Service:
-
-🖥️  Open Command Prompt (Run as Administator) 
 
 ```bash
 mt5_install.bat
