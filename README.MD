@@ -4,7 +4,7 @@
 
 # MT5-Stealth Mode
 
-The Windows batch scripts convert MetaTrader 5 into background Windows Service. that best work only on EA, Python-MetaTrader etc. but dont't show anything UI process while running script. good for who want to running as slience mode on VPS/Server enviroment without [MT5 on VINE](https://github.com/gmag11/MetaTrader5-Docker) freezee docker.
+The Windows batch scripts convert MetaTrader 5 into background Windows Service. that best work only on EA, Python-MetaTrader etc. but dont't show anything UI process while running script. good for who want to running as slience mode and full performance on VPS/Server enviroment without [MT5 on VINE](https://github.com/gmag11/MetaTrader5-Docker) freezee docker.
 
 ## Feature
 
