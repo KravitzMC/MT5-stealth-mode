@@ -10,7 +10,7 @@ The Windows batch scripts convert MetaTrader 5 into background Windows Services.
 
 ✅ Auto allow algorithmic trading. </br>
 ✅ Auto allow DLL import. </br>
-❌ Auto Login .. (make sure before install service you must set login to your account by manually on MetaTrader 5) </br>
+
 
 ## 👇 Quickstart
 
@@ -43,7 +43,7 @@ for another command if you want:
 * <b>Uninstall Service :</b>  ``` mt5_remove.bat ```
 
 
-### 3. Test running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
+### 3. Try running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
 
 Before running the script, please make sure to close all MT5 process instances.
 

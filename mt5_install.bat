@@ -74,11 +74,13 @@ for /f "usebackq delims=" %%A in (`powershell -command "(Get-Item '%FOUND_EXE%')
 
 :MATCH_FOUND
 
+set "INI=%~dp0common.ini"
+
 if exist "%NSSM%" (
     echo Running: %NSSM%
     "%NSSM%" install MT5Service  "%FOUND_EXE%"
     "%NSSM%" set MT5Service AppDirectory  "%FOUND_DIR%
-    "%NSSM%" set MT5Service AppParameters /config:common.ini
+    "%NSSM%" set MT5Service AppParameters /config:"%INI%"
     "%NSSM%" set MT5Service AppExit Default Restart
     "%NSSM%" set MT5Service DisplayName MT5Service
     "%NSSM%" set MT5Service ObjectName LocalSystem
