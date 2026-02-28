@@ -10,7 +10,8 @@ The Windows batch scripts convert MetaTrader 5 into Windows Service headless mod
 
 ✅ Auto enabled allow algorithmic trading. </br>
 ✅ Auto enabled allow DLL import. </br>
-
+✅ Auto Logon. </br>
+✅ And another feature you can set in configuration file. </br>
 
 ## 👇 Quickstart
 
