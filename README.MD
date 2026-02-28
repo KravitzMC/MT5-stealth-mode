@@ -7,7 +7,7 @@
 The Windows batch scripts convert MetaTrader 5 into Windows Service headless mode. that best work only on EA, Python-MetaTrader etc. but dont't show anything UI process while running script. good for who want to running full performance on VPS/Server enviroment without [MT5 on VINE](https://github.com/gmag11/MetaTrader5-Docker) freezee docker.
 
 ## Problem & Solution
-When you want to run hidden mode Metatrader 5 with ```PowerShell -WindowStyle Hidden ``` , ```VBScript``` or ``` WindowsAPI ``` but anything not supported ❌ because GUI apps usually ignore it.  so i create this script to convert MT5 into Windows Service forced headless mode.
+When you want to run hidden mode Metatrader 5 with ```PowerShell -WindowStyle Hidden ``` , ```VBScript``` , ``` WindowsAPI ``` etc. but anything not supported ❌ because GUI apps usually ignore it.  so i create this script to convert MT5 into Windows Service forced headless mode.
 
 ## Feature
 
