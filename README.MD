@@ -9,7 +9,7 @@ The Windows batch scripts convert MetaTrader 5 into Windows Service headless mod
 ## Problem & Solution
 When you want to run hidden mode Metatrader 5 with ```PowerShell -WindowStyle Hidden ``` , ```VBScript``` , ``` WindowsAPI ``` etc. but anything not supported ❌ because GUI apps usually ignore it.  so i create this script to convert MT5 into Windows Service forced headless mode.
 
-## Feature
+## Features
 
 ✅ Auto enabled allow algorithmic trading. </br>
 ✅ Auto enabled allow DLL import. </br>
