@@ -4,7 +4,7 @@
 
 # MT5-Stealth Mode
 
-The Windows batch scripts convert MetaTrader 5 into Windows Service headless mode. that best work only on EA, Python-MetaTrader etc. but dont't show anything UI process while running script. good for who want to running as slience mode and full performance on VPS/Server enviroment without [MT5 on VINE](https://github.com/gmag11/MetaTrader5-Docker) freezee docker.
+The Windows batch scripts convert MetaTrader 5 into Windows Service headless mode. that best work only on EA, Python-MetaTrader etc. but dont't show anything UI process while running script. good for who want to running full performance on VPS/Server enviroment without [MT5 on VINE](https://github.com/gmag11/MetaTrader5-Docker) freezee docker.
 
 ## Feature
 
@@ -92,7 +92,7 @@ print("Account:", account_info.login)
 print("Balance:", account_info.balance)
 ```
 
-if output is : Connected to MT5 Account: 123456789 mean is service background process still working.
+if output is : Connected to MT5 Account: 123456789 mean is headless mode still working.
 
 ### 🔴 Note : 
 
