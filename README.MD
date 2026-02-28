@@ -8,7 +8,7 @@ The Windows batch scripts convert MetaTrader 5 into Windows Service headless mod
 
 ## Problem & Solution
 
-When you run MT5 with PowerShell by using WindowStyle Hidden mode ``` Start-Process -FilePath "C:\Apps\MT5\terminal64.exe" -WindowStyle Hidden ``` but not working. I don't know why. so i create this script to convert MT5 into Windows Service forced headless mode.
+When you run MT5 with PowerShell by using ``` Start-Process -FilePath "C:\Apps\MT5\terminal64.exe" -WindowStyle Hidden ``` but not working. I don't know why. so i create this script to convert MT5 into Windows Service forced headless mode.
 
 ## Feature
 
