@@ -73,7 +73,7 @@ for another command if you want:
 * <b>Uninstall Service :</b>  ``` mt5_remove.bat ```
 
 
-### 4. Try Communication with MT5 Service by running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
+### 4. Try Communicate with MT5 Service by running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
 
 Before Running the script, Please make sure to ❌close all front MT5 instances process.
 
