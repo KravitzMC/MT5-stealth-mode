@@ -75,7 +75,7 @@ for another command if you want:
 
 ### 4. Try Communication with MT5 Service by running script [py-MetaTrader5](https://pypi.org/project/metatrader5/) :
 
-Before Running the script, Please make sure to ❌close all front MT5 process instances.
+Before Running the script, Please make sure to ❌close all front MT5 instances process.
 
 ```python
 import MetaTrader5 as mt5
