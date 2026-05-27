@@ -98,7 +98,7 @@ print("Balance:", account_info.balance)
 
 if output is : Connected to MT5 Account: 123456789 mean is headless mode still working.
 
-### 🔴 Note : 
+### ⚠️ Risk alert : 
 
 Please test with your Demo account before trade with Live account.  and if you want to remove all order position you can remove by manually at Metatrader 5, App Broker, or by Python code.
 
