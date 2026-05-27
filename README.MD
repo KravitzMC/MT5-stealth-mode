@@ -39,7 +39,7 @@ Password=your_password
 Server=your_broker_server
 
 [StartUp]
-Symbol=XAUUSD.p
+Symbol=XAUUSD
 
 [Experts]
 AllowDllImport=1
