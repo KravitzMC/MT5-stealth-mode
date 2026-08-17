@@ -1,6 +1,3 @@
-<div align="center">
-   <img style="margin: 0 auto; padding-bottom: 15px; padding-top: 30px" width=40%" src="https://github.com/KravitzMC/MT5-stealth-mode/blob/main/banner.png">
-</div>
 
 # MT5-Stealth Mode
 
